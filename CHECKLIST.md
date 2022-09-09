@@ -1,18 +1,17 @@
 # PIZZA ORDER PAGE
 - [ ] Header component
-        - [ ] Total: with shopping cart
-        - [ ] Redux for Total
+    - [ ] Total: with shopping cart
+    - [ ] Redux for Total
 - [ ] Body
-        - [ ] Append our 'GET' of Pizza options.
-        - [ ] Axios request
-        - [ ] Next Navigation (Router/Link) to 
-            Order Detail page
+    - [ ] Append our 'GET' of Pizza options.
+    - [ ] Axios request
+    - [ ] Next Navigation (Router/Link) to 
+        Order Detail page
 
 ## ORDER DETAILS
-- [ ] FORM Element with NAME ADDRESS CITY 
-      ZIP
+- [ ] FORM Element with NAME ADDRESS CITY ZIP
 - [ ] Radio Buttons for PICKUP and DELIVERY
-        - [ ] POST request axios
+    - [ ] POST request axios
 - [ ] Next Navigation link to CHECKOUT page
 
 ### CHECKOUT
@@ -20,10 +19,10 @@
 - [ ] Table element for the ORDER posted
 - [ ] TOTAL tied in with REDUX
 - [ ] CHECKOUT button
-        - [ ] POST to the Database (ORDERS TABLE)
-        - [ ] ALERT confirmation dialog
-        - [ ] Clear the Cart
-        - [ ] Navigate (link/router) to 'PIZZA HOME'
+    - [ ] POST to the Database (ORDERS TABLE)
+    - [ ] ALERT confirmation dialog
+    - [ ] Clear the Cart
+    - [ ] Navigate (link/router) to 'PIZZA HOME'
 
 #### ADMIN PAGE
 - [ ] Eact PATH /admin link and router
