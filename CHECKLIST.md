@@ -1,5 +1,5 @@
 # PIZZA ORDER PAGE
-- [ ] Header component
+- [x] Header component
     - [ ] Total: with shopping cart
     - [ ] Redux for Total
 - [ ] Body
