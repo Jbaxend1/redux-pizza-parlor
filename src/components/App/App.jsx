@@ -25,18 +25,32 @@ function App() {
   return (
     <div className='App'>
       <Header />
-  
+
       <img src='images/pizza_photo.png' />
       <p>Pizza is great.</p>
-    <ul>
-      {
-        pizzaList.map((pizza) => {
-          return <li key={pizza.id}>
-            {pizza.image_path} {pizza.name}: {pizza.description} Price: {pizza.price}
-          </li>
-        })
-      }
-    </ul>
+      <ul>
+        {
+          pizzaList.map((pizza) => {
+            return (
+              <>
+                
+                <li key={pizza.id}>
+                  <div>
+                    <img src={pizza.image_path} />
+                  </div>
+                  <br />
+                  <br />
+                  {pizza.name}: {pizza.description} Price: {pizza.price}
+                </li>
+                <br />
+                <button>ADD</button>
+                <br />
+                <br />
+              </>
+            )
+          })
+        }
+      </ul>
     </div>
   );
 }
