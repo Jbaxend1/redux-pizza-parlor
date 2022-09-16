@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Header from '../Header/Header';
+import PizzaList from '../PizzaList/PizzaList';
+import Info from '../Info/Info';
 import './App.css';
 
 function App() {
@@ -28,14 +30,14 @@ function App() {
 
       <img src='images/pizza_photo.png' />
       <p>Pizza is great.</p>
-      <ul>
+      <ul >
         {
           pizzaList.map((pizza) => {
             return (
               <>
                 
                 <li key={pizza.id}>
-                  <div>
+                  <div >
                     <img src={pizza.image_path} />
                   </div>
                   <br />
