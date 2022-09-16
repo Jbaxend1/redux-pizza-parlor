@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import axios from 'axios';
 import Header from '../Header/Header';
 import PizzaList from '../PizzaList/PizzaList';
@@ -28,31 +29,22 @@ function App() {
     <div className='App'>
       <Header />
 
+      <Router>
+        <Route exact path="/">
+        </Route>
+        <Route exact path="/info">
+          <Info />
+        </Route>
+
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/info">Info</Link></li>
+        </ul>
+      </Router>
+
       <img src='images/pizza_photo.png' />
       <p>Pizza is great.</p>
-      <ul >
-        {
-          pizzaList.map((pizza) => {
-            return (
-              <>
-                
-                <li key={pizza.id}>
-                  <div >
-                    <img src={pizza.image_path} />
-                  </div>
-                  <br />
-                  <br />
-                  {pizza.name}: {pizza.description} Price: {pizza.price}
-                </li>
-                <br />
-                <button>ADD</button>
-                <br />
-                <br />
-              </>
-            )
-          })
-        }
-      </ul>
+      <PizzaList pizzaList={pizzaList} />
     </div>
   );
 }
