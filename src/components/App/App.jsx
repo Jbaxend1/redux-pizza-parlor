@@ -4,6 +4,7 @@ import axios from 'axios';
 import Header from '../Header/Header';
 import PizzaList from '../PizzaList/PizzaList';
 import Info from '../Info/Info';
+import Checkout from '../Checkout/Checkout';
 import './App.css';
 
 function App() {
@@ -35,10 +36,14 @@ function App() {
         <Route exact path="/info">
           <Info />
         </Route>
+        <Route exact path="/checkout">
+          <Checkout />
+        </Route>
 
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/info">Info</Link></li>
+          <li><Link to="/checkout">Checkout</Link></li>
         </ul>
       </Router>
 
