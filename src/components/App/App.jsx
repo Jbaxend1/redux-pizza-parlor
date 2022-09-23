@@ -42,9 +42,6 @@ function App() {
         </ul>
       </Router>
 
-      <img src='images/pizza_photo.png' />
-      <p>Pizza is great.</p>
-      <PizzaList pizzaList={pizzaList} />
     </div>
   );
 }
