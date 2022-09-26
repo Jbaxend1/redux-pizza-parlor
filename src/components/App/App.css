@@ -19,6 +19,26 @@
   margin-bottom: 3px;
 }
 
+.customer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  max-width:max-content;
+}
+
+input {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
 ul {
   list-style-type: none;
 }
