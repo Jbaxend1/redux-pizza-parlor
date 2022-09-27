@@ -42,6 +42,7 @@ function App() {
         </ul>
       </Router>
 
+      <PizzaList pizzaList={pizzaList} />
     </div>
   );
 }
